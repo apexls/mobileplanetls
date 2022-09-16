@@ -634,18 +634,51 @@ select:focus{
     justify-content:flex-start;
 }
 /*----------- A B O U T   P A G E    --------*/
+.pageheader
+{
 
-.about-row-2{
-    justify-content: space-between;
-    padding-top: 20px;
-    margin-left: 0px;
-    padding-left: 0px;
-        
+    text-align: center;
+    margin-top: 20px;
 }
 
+.pageheader p strong
+{
+    font-size: 50px;
+
+
+}
+
+.rowmanagement{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.about-box
+{
+
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.1);
+    padding: 40px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.management
+{
+    justify-content: flex-start;
+    max-width: 50%;
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.1);
+    padding: 40px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
 .about-container{
-    min-width: 550px;
-    max-width: 600px;
+    min-width: 40%;
+    max-width: 50%;
     margin-left: 0px;
     
     margin: auto;
@@ -654,8 +687,8 @@ select:focus{
     cursor: pointer;   
 }
 .aboutv-container{
-    min-width: 400px;
-    max-width: 500px;
+    
+    max-width: 32%;
     margin-left: 0px;
     
     margin: auto;
@@ -667,8 +700,8 @@ select:focus{
 }
 
 .about-img-owner{
-    border-radius: 50%;
-    border: 4px solid #42f548;
+    border-radius: 0%;
+    border: 1px solid #000;
     margin-left: 120px;
     
 }
@@ -770,6 +803,7 @@ td img{
         overflow: hidden;
         transition: max-height 0.5s;
     }
+    
     nav ul li{
         display: block;
          margin-right: 50px;
@@ -799,7 +833,27 @@ td img{
 } 
 
 /*----------- MEDIA QUERY FOR MLESS THAN 600-------*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
+
+
+    .rowmanagement
+    {
+
+        display:list-item;
+        margin-bottom: 20px;
+        
+        
+        
+    }
+    
+    .management
+    {
+        min-width: 100%;
+
+    }
+
+}
+@media only screen and (max-width: 600px){   
     .contact-container .col .details p{
         font-size: 20px;
         margin-right: 10px;
